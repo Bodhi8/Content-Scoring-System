@@ -1,0 +1,10 @@
+set.seed(1234567890)
+
+library("neuralnet")
+library(RODBC)
+
+myconn <-odbcConnect("mydsn", uid="", pwd="")
+contentdata <- sqlFetch(myconn, "")
+pundat <- sqlQuery(myconn, "select * from database")
+close(myconn)
+
