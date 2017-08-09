@@ -8,3 +8,18 @@ contentdata <- sqlFetch(myconn, "")
 pundat <- sqlQuery(myconn, "select * from database")
 close(myconn)
 
+## extract a set to train the NN
+trainset <- dataset[ ]
+
+## select the test set
+testset <- dataset[]
+
+## build the neural network (NN)
+creditnet <- neuralnet(default10yr ~ LTI + age, trainset, hidden = 4, lifesign = "minimal", 
+    linear.output = FALSE, threshold = 0.1)
+## hidden: 4    thresh: 0.1    rep: 1/1    steps:    7266   error: 0.79202  time: 9.32 secs
+
+## plot the NN
+plot(creditnet, rep = "best")
+NNplot
+
