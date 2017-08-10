@@ -1,3 +1,11 @@
+##Input Variables: Organic Search, Direct Traffic, Conversions, Social Likes, Social Shares, Instagram Likes, Instagram Shares, Twitter Likes, Twitter Shares
+##Weights: Organic: .7, Direct Traffic: .7, Conversions: 1, Social Likes: .5, Social Shares: .8, Instagram Likes: .4, Instagram Shares: .5, Twitter Likes: .3, Twitter Shares: .4
+
+##Input Variables feed into Activation Function passing to next layer, etc.
+
+
+
+
 set.seed(1234567890)
 
 library("neuralnet")
