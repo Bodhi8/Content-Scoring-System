@@ -1,2 +1,12 @@
+"""
+Import Variables
+Apply weights to variables
+Content is scored accoring to variables
+Top performing content is returned
+
+"""
+
+
+
 pip install teradata
 
